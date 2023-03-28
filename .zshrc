@@ -29,7 +29,7 @@ eval "$(fnm env --use-on-cd)"
 [ `alias | grep "^ls=" | wc -l` != 0 ] && unalias ls
 alias gtr='cd "$(git rev-parse --show-toplevel)"'
 alias gst='git status -sb'
-alias gps='git push'
+alias gp='git push'
 alias gpl='git pull'
 alias gco='git checkout'
 alias gc='git commit'
