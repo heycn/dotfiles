@@ -40,7 +40,8 @@ alias gp='git push'
 alias gpl='git pull'
 alias go='git checkout'
 alias gc='git commit'
-alias gc='git add'
+alias gcm='git commit -m'
+alias ga='git add'
 alias glog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias ls='exa'
 alias ll='ls -lh --git'
@@ -52,3 +53,32 @@ alias pi='pnpm install'
 alias pd='pnpm run dev'
 alias pb='pnpm run build'
 alias pp='pnpm run preview'
+
+# === NPM BINARY CHINA ===
+# https://github.com/cnpm/binary-mirror-config/blob/master/package.json#L48
+export COREPACK_NPM_REGISTRY="https://registry.npmmirror.com",
+export NODEJS_ORG_MIRROR="https://cdn.npmmirror.com/binaries/node",
+export NVM_NODEJS_ORG_MIRROR="https://cdn.npmmirror.com/binaries/node",
+export PHANTOMJS_CDNURL="https://cdn.npmmirror.com/binaries/phantomjs",
+export CHROMEDRIVER_CDNURL="https://cdn.npmmirror.com/binaries/chromedriver",
+export OPERADRIVER_CDNURL="https://cdn.npmmirror.com/binaries/operadriver",
+export CYPRESS_DOWNLOAD_PATH_TEMPLATE="https://cdn.npmmirror.com/binaries/cypress/${version}/${platform}-${arch}/cypress.zip",
+export ELECTRON_MIRROR="https://cdn.npmmirror.com/binaries/electron/",
+export ELECTRON_BUILDER_BINARIES_MIRROR="https://cdn.npmmirror.com/binaries/electron-builder-binaries/",
+export SASS_BINARY_SITE="https://cdn.npmmirror.com/binaries/node-sass",
+export SWC_BINARY_SITE="https://cdn.npmmirror.com/binaries/node-swc",
+export NWJS_URLBASE="https://cdn.npmmirror.com/binaries/nwjs/v",
+export PUPPETEER_DOWNLOAD_HOST="https://cdn.npmmirror.com/binaries/chrome-for-testing",
+export PUPPETEER_DOWNLOAD_BASE_URL="https://cdn.npmmirror.com/binaries/chrome-for-testing",
+export PLAYWRIGHT_DOWNLOAD_HOST="https://cdn.npmmirror.com/binaries/playwright",
+export SENTRYCLI_CDNURL="https://cdn.npmmirror.com/binaries/sentry-cli",
+export SAUCECTL_INSTALL_BINARY_MIRROR="https://cdn.npmmirror.com/binaries/saucectl",
+export RE2_DOWNLOAD_MIRROR="https://cdn.npmmirror.com/binaries/node-re2",
+export RE2_DOWNLOAD_SKIP_PATH="true",
+export PRISMA_ENGINES_MIRROR="https://cdn.npmmirror.com/binaries/prisma",
+export npm_config_better_sqlite3_binary_host="https://cdn.npmmirror.com/binaries/better-sqlite3",
+export npm_config_keytar_binary_host="https://cdn.npmmirror.com/binaries/keytar",
+export npm_config_sharp_binary_host="https://cdn.npmmirror.com/binaries/sharp",
+export npm_config_sharp_libvips_binary_host="https://cdn.npmmirror.com/binaries/sharp-libvips",
+export npm_config_robotjs_binary_host="https://cdn.npmmirror.com/binaries/robotjs",
+
